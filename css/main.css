@@ -5,6 +5,8 @@
     --fs-products: clamp(1rem, 0.8vw + 0.8rem, 1.3rem);
     --fs-app: clamp(0.8rem, 2vw + 1.3rem, 4rem);
 
+    --hex_orange: #E97820;
+
 
     --font: 1rem;
     --line: calc(var(--font) * 2);
@@ -61,6 +63,7 @@ nav {
     display: block;
     max-width:100%;
     opacity: 1;
+    margin-left: 0.5em;
 }
 
 * {
@@ -212,11 +215,21 @@ nav {
     margin-top: 2em;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
+    gap: 2em;
 }
 
-.btns img {
-    max-width: 90%;
+/* .btns img {
+    max-width: 10em;
+}  */
+
+.btn-google img{
+    max-width: 10em;
+}
+
+.btn-app img{
+    max-width: 9em;
 }
 
 @media (max-width: 944px){
@@ -246,9 +259,11 @@ nav {
 .contact {
     display:flex;
     flex-wrap: wrap;
-    gap: 3em;
-    margin: 2em 3em 3em;
-    align-items: center;
+    gap: 2em;
+    /* margin: 2em 3em 3em; */
+    padding-top: 5em;
+    padding-bottom: 8em;
+    align-items: flex-start;
     justify-content: center;
 
 }
@@ -272,7 +287,7 @@ nav {
 }
 
 .social * {
-    margin: 1em;
+    margin: 0.8em;
     align-items: center;
     max-width: 100%
 }
@@ -281,14 +296,16 @@ nav {
     max-width: 4em;
 }
 
-@media (max-width: 390px){
+@media (max-width: 430px){
     
     .contact {
-        gap: 2em;
+        padding: 2em;
     }
     
     .social * {
-        margin: 0.5em;
+        margin: 0.4em;
+        align-items: center;
+        /* margin-top: 1em; */
        
     }
     .social img{
