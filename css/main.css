@@ -22,6 +22,7 @@ body {
     margin: 0;
     font-family: 'Magra';
     background-color: #F0F2F8;
+    font-weight: 700;
 }
 
 * {
@@ -109,7 +110,6 @@ nav {
     padding-top: 1%;
     position: absolute;
     padding-right: 5%;
-    font-weight: 700;
 }
 
 @media( max-width: 700px ){
@@ -177,7 +177,6 @@ nav {
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: 21vh;
-    font-weight: 700;
 }
 
 @media (max-width: 813px){
@@ -224,10 +223,6 @@ nav {
     background-repeat: no-repeat;	    
     background-size: 100%;	
     background-color: #2C5AB1;
-    /* position: relative; */
-    /* display: grid;
-    grid-template-columns: 1.3fr 2fr;
-    grid-template-rows: 0.5fr 0.5fr; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -236,13 +231,13 @@ nav {
     
 }
 
-
 .second-col {
-    margin-top: 10em;
+    margin-top: 15em;
 }
 
 .cel {
     margin-top: 7em;
+    display: none;
 }
 
 
@@ -264,7 +259,6 @@ nav {
     flex-wrap: wrap;
     gap: 2em;
 }
-
 
 
 .btn-google img{
@@ -307,10 +301,11 @@ nav {
     display: flex;
     flex-wrap: wrap;
     min-height: 30em;
-    gap: 0.5em;
+    gap: 2em;
     justify-content: center;
     align-items: center;
-    padding-top: 5% ;
+    padding-left: 10em;
+    padding-right: 10em;
 }
 
 .card-app {
@@ -321,9 +316,12 @@ nav {
     width: 12em;
     height: 11em;
     background-color: rgba(233, 120, 32, 1);
-    margin-left: 2em;
-    margin-right: 2em;
+    
     /* background-color: #2c60c0; */
+    
+}
+
+.card-holder {
     
 }
 
@@ -340,12 +338,15 @@ nav {
     padding: 10%;
     text-align: center;
     color: #FFFFFF;
+    font-weight: 400;
     
 }
 
 @media (max-width: 1006px){
     .container{
         padding-bottom: 5%;
+        padding-left: 5em;
+        padding-right: 5em;
     }
 
 }
@@ -375,7 +376,6 @@ nav {
 .info span{
     color: #545454;
     font-size: var(--fs-title);
-    font-weight: 700;
 }
 
 .info div{
