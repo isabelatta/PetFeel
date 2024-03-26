@@ -151,8 +151,9 @@ nav {
 
 .products {
     min-height: 30em;
-    display: grid;
-    place-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .title-section {
@@ -188,11 +189,11 @@ nav {
     flex-basis: 21vh;
 } */
 
-@media (max-width: 813px){
+/* @media (max-width: 813px){
     .cards > * {
         flex-basis: 18vh;
     }
-}
+} */
 
 @media (min-width:900px){
     .card-container{
