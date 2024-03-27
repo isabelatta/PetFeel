@@ -73,7 +73,6 @@ nav {
 }
 
 
-
 @media (max-width: 550px){
     .navbar {
         display: none;
@@ -91,6 +90,7 @@ nav {
     padding-bottom: 27%;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
 }  
+
 
 .home h1 {
     font-family: 'Londrina Solid';
@@ -112,6 +112,10 @@ nav {
     padding-right: 5%;
 }
 
+.home p:after {
+    content: "Na Pet Feel, você encontra tudo para trazer mais alegria e qualidade de vida para seus pets.  Produtos de qualidade, ótimos preços, embelezamento de primeira e serviço veterinário técnico e acolhedor.";
+  }
+
 @media( max-width: 700px ){
     
     .home h1 {
@@ -125,22 +129,32 @@ nav {
         padding-right: 10%;
 
     }
+
 }
 
 @media ( max-width: 500px ){
     
     .home {
-        padding-bottom: 30%;
+        height: 11em;
+        background-size: 150%;
     }
 
     .home h1 {
         text-align: center;
         padding-left: 0;
-        padding-top: 10%;
+        font-size: 1.5rem;
+        padding-top: 38%;
     }
 
-    .home p{
+    .home p {
+        font-size: 0.95rem;
         text-align: center;
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+
+    .home p:after {
+        content: 'Na Pet Feel, você encontra tudo para trazer mais alegria e qualidade de vida para seus pets.';
     }
 }
 
@@ -266,12 +280,13 @@ nav {
 
 .app h1 {
     font-family: 'Londrina Solid';
-    color: #FFFFFF;
+    color: #d9dce4;
     font-size: var(--fs-app);
+    text-align: center;
 }
 
 .app-text-2 {
-    text-indent: 2em;
+    /* text-indent: 2em; */
 }
 
 .btns {
@@ -286,10 +301,12 @@ nav {
 
 .btn-google img{
     max-width: 10em;
+    display: none;
 }
 
 .btn-app img {
     max-width: 9em;
+    display: none;
 }
 
 
@@ -306,11 +323,28 @@ nav {
     }
 
     .second-col{
-        margin-top:10em;
+        margin-top:9em;
         padding-bottom: 3em;
     }
 
+    .app h1 {
+       
+    }
+
 }
+
+@media (max-width: 410px){
+    .second-col {
+        margin-top: 7em;
+    }
+    .app h1 {
+        padding-left: 5%;
+        padding-right: 5%;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}
+
 
 
 
@@ -319,45 +353,51 @@ nav {
 
 .container{
     background-color: #2C5AB1;
-    /* background-color: #245fce; */
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     display: flex;
     flex-wrap: wrap;
-    min-height: 30em;
-    gap: 2em;
+    /* min-height: 25em; */
+    padding-bottom: 5%;
+    gap: 1em;
     justify-content: center;
     align-items: center;
-    padding-left: 10em;
-    padding-right: 10em;
+    padding-left: 5em;
+    padding-right: 5em;
 }
 
 .card-app {
     border-radius: 4px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
     justify-content: center;
     align-items: center;
-    width: 12em;
-    height: 11em;
-    background-color: rgba(233, 120, 32, 1);
     
-    /* background-color: #2c60c0; */
+    width: 17em;
+    height: 6.5em;
+    /* display: flex; */
+
+    /* background-color: rgba(233, 120, 32, 1); */
+    background-color: #d9dce4;
+    /* background-color: #4172cd; */
     
 }
-
 
 .card-app h2 {
     /* color:#F0F2F8; */
-    padding-top: 10%;
+    padding-top: 2%;
+    /* margin-left: 2%; */
     font-family:'Londrina Solid';
     text-align: center;
-    color: #FFFFFF;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
+    /* color: #FFFFFF; */
+    color: rgba(233, 120, 32, 1);
+    color:#2C5AB1;
+    /* text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50); */
 }
 
 .card-app p{
-    padding: 10%;
+    padding: 2%;
     text-align: center;
-    color: #FFFFFF;
+    /* color: #FFFFFF; */
+    color: #2C5AB1;
     font-weight: 400;
     
 }
@@ -365,8 +405,30 @@ nav {
 @media (max-width: 1006px){
     .container{
         padding-bottom: 5%;
-        padding-left: 5em;
-        padding-right: 5em;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+}
+
+@media (max-width: 450px){
+    .container{
+        padding-bottom: 5%;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    .card-app h2 {
+        font-size: 1.4rem;
+    }
+
+    .card-app p {
+        font-size: 0.9rem;
+    }
+
+    .card-app {
+        width: 17em;
+        height: 5em; 
     }
 
 }
