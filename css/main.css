@@ -1,546 +1,423 @@
-
 :root {
-    --fs-home: clamp(1.5rem, 2vw + 1rem, 5rem);
-    --fs-title: clamp(0.8rem, 0.8vw + 0.5rem, 4rem);
-    --fs-products: clamp(1rem, 0.8vw + 0.8rem, 1.3rem);
-    --fs-app: clamp(0.8rem, 2vw + 1.3rem, 4rem);
+  --fs-home: clamp(1.5rem, 2vw + 1rem, 5rem);
+  --fs-title: clamp(0.8rem, 0.8vw + 0.5rem, 4rem);
+  --fs-products: clamp(1rem, 0.8vw + 0.8rem, 1.3rem);
+  --fs-app: clamp(0.8rem, 2vw + 1.3rem, 4rem);
 
-    --hex_orange: #E97820;
+  --hex_orange: #e97820;
 
-
-    --font: 1rem;
-    --line: calc(var(--font) * 2);
-    --move: calc(-1 * var(--line));
-
+  --font: 1rem;
+  --line: calc(var(--font) * 2);
+  --move: calc(-1 * var(--line));
 }
-
 html {
-    font-size: 62.5;
+  font-size: 62.5;
 }
-
 body {
-    margin: 0;
-    font-family: 'Magra';
-    background-color: #F0F2F8;
-    font-weight: 700;
+  margin: 0;
+  font-family: "Magra";
+  background-color: #f0f2f8;
+  font-weight: 700;
 }
-
 * {
-    width: auto;
-    margin: 0;
+  width: auto;
+  margin: 0;
 }
-
 .wrapper {
-    max-width: 1500px;
-    margin-inline: 0 auto;
+  /* max-width: 1500px; */
+  margin-inline: 0 auto;
 }
-
 /* NAVBAR */
 
 nav {
-    margin-right: 1em;
-   
+  margin-right: 1em;
 }
-
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.5em;
-    background-color: rgba(44, 90, 177, 0.8);
-    position: fixed;
-    width: 100%;
-    z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em;
+  background-color: rgba(44, 90, 177, 0.8);
+  position: fixed;
+  width: 100%;
+  z-index: 100;
 }
-
 .list {
-    list-style-type: none;
-    display: flex;
-    gap: 3em;
-    margin: 1em;
+  list-style-type: none;
+  display: flex;
+  gap: 3em;
+  margin: 1em;
 }
-
 .list a {
-    text-decoration: none;
-    color:#F0F2F8;
+  text-decoration: none;
+  color: #f0f2f8;
 }
-
 .logo {
-    display: block;
-    max-width:100%;
-    opacity: 1;
-    margin-left: 0.5em;
+  display: block;
+  max-width: 100%;
+  opacity: 1;
+  margin-left: 0.5em;
 }
-
-
-@media (max-width: 550px){
-    .navbar {
-        display: none;
-    }
+@media (max-width: 550px) {
+  .navbar {
+    display: none;
+  }
 }
-
 /* HOME */
 
 .home {
-    background-color: #2C5AB1;
-    background-image: url(../assets/images/fachada.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    max-width: 100%;
-    padding-bottom: 27%;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
-}  
-
-
+  background-color: #2c5ab1;
+  background-image: url(../assets/images/fachada.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  max-width: 100%;
+  padding-bottom: 27%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 .home h1 {
-    font-family: 'Londrina Solid';
-    color:#FFFFFF;
-    font-size: var(--fs-home);
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.85);
-    padding-top: 20%;
-    padding-left: 20%;
+  font-family: "Londrina Solid";
+  color: #ffffff;
+  font-size: var(--fs-home);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.85);
+  padding-top: 20%;
+  padding-left: 20%;
 }
-
 .home p {
-    color:#FFFFFF;
-    max-width: 90dvh;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.40);
-    font-size: var(--fs-title);
-    padding-left: 25%;
-    padding-top: 1%;
-    position: absolute;
-    padding-right: 5%;
+  color: #ffffff;
+  max-width: 90dvh;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+  font-size: var(--fs-title);
+  padding-left: 25%;
+  padding-top: 1%;
+  position: absolute;
+  padding-right: 5%;
 }
-
 .home p:after {
-    content: "Na Pet Feel, você encontra tudo para trazer mais alegria e qualidade de vida para seus pets.  Produtos de qualidade, ótimos preços, embelezamento de primeira e serviço veterinário técnico e acolhedor.";
+  content: "Na Pet Feel, você encontra tudo para trazer mais alegria e qualidade de vida para seus pets.  Produtos de qualidade, ótimos preços, embelezamento de primeira e serviço veterinário técnico e acolhedor.";
+}
+@media (max-width: 700px) {
+  .home h1 {
+    text-align: center;
+    padding-left: 0;
+    padding-top: 15%;
   }
-
-@media( max-width: 700px ){
-    
-    .home h1 {
-        text-align: center;
-        padding-left: 0;
-        padding-top: 15%;
-    }
-
-    .home p{
-        padding-left:10%;
-        padding-right: 10%;
-
-    }
-
+  .home p {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
 }
-
-@media ( max-width: 500px ){
-    
-    .home {
-        height: 11em;
-        background-size: 150%;
-    }
-
-    .home h1 {
-        text-align: center;
-        padding-left: 0;
-        font-size: 1.5rem;
-        padding-top: 38%;
-    }
-
-    .home p {
-        font-size: 0.95rem;
-        text-align: center;
-        padding-right: 5%;
-        padding-left: 5%;
-    }
-
-    .home p:after {
-        content: 'Na Pet Feel, você encontra tudo para trazer mais alegria e qualidade de vida para seus pets.';
-    }
+@media (max-width: 500px) {
+  .home {
+    height: 11em;
+    background-size: 150%;
+  }
+  .home h1 {
+    text-align: center;
+    padding-left: 0;
+    font-size: 1.5rem;
+    padding-top: 38%;
+  }
+  .home p {
+    font-size: 0.95rem;
+    text-align: center;
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+  .home p:after {
+    content: "Na Pet Feel, você encontra tudo para trazer mais alegria e qualidade de vida para seus pets.";
+  }
 }
-
-
 /* PRODUCTS */
 
 .products {
-    /* min-height: 30em; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
 .title-section {
-    font-family: 'Londrina Solid';
-    font-size: var(--fs-home);
-    color: rgb(233, 120, 32);
-    text-align: center;
-    margin-top: 3%;
+  font-family: "Londrina Solid";
+  font-size: var(--fs-home);
+  color: rgb(233, 120, 32);
+  text-align: center;
+  margin-top: 3%;
 }
-
-.card-container{
-    display: grid;
+.card-container {
+  display: grid;
+  gap: 1em;
+  margin: 5%;
+  margin-top: 3%;
+}
+.card {
+  position: relative;
+}
+.card img {
+  max-width: 100%;
+  height: 100%;
+}
+@media (min-width: 901px) {
+  .card-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (max-width: 900px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 30em;
+    gap: 2em;
+  }
+}
+@media (max-width: 450px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
     gap: 1em;
-    margin: 5%;
-    margin-top: 3%;
+  }
+
+  .card {
+    max-height: 15em;
+  }
 }
+@media (max-width: 300px) {
+  .card-container {
+    grid-template-columns: 1fr;
+    gap: 1em;
+  }
 
-.card{
-    position: relative;
+  .card {
+    max-height: 15em;
+  }
 }
-
-.card img{
-    max-width: 100%;
-    height: 100%;
+.card span {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  overflow: hidden;
+  padding-top: 15%;
+  padding-bottom: 5%;
+  text-align: center;
+  font-size: var(--fs-products);
+  color: #ffffff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.75);
+  background-color: rgba(233, 120, 32, 0.7);
+  height: 15%;
+  min-width: 100%;
 }
-
-@media (min-width:901px){
-    .card-container{
-        grid-template-columns: repeat(4,1fr);
-    }
-}
-
-@media (max-width:900px){
-    .card-container{
-        grid-template-columns: repeat(2,1fr);
-        max-width: 30em;   
-        gap: 2em;
-    }
-}
-
-@media (max-width:450px){
-    .card-container{
-        grid-template-columns: repeat(2,1fr);  
-        gap: 1em;
-        /* margin: 7%; */
-    }
-
-    .card{
-        max-height: 15em;
-    }
-}
-
-@media (max-width:300px){
-    .card-container{
-        grid-template-columns: 1fr;  
-        gap: 1em;
-        /* margin: 7%; */
-    }
-
-    .card{
-        max-height: 15em;
-    }
-}
-
-
-.card span{
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    overflow: hidden;
-    padding-top: 15%;
-    padding-bottom: 5%;
-    text-align: center;
-    font-size: var(--fs-products);
-    color:#FFFFFF;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.75);
-    background-color: rgba(233, 120, 32, 0.70);
-    height: 15%;
-    min-width: 100%;
-    
-}
-
-
-
-
 /* SECTION APP */
 
-.app{
-    max-width: 100%;
-    min-height: 35em;
-    background-image:  url(../assets/bg-wave.svg);
-    background-repeat: no-repeat;	    
-    background-size: 100%;	
-    background-color: #2C5AB1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8em;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    
+.app {
+  max-width: 100%;
+  min-height: 35em;
+  background-image: url(../assets/bg-wave.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: #2c5ab1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
 .second-col {
-    margin-top: 15em;
+  margin-top: 15em;
 }
-
 .cel {
-    margin-top: 7em;
-    display: none;
+  margin-top: 7em;
+  display: none;
 }
-
-
 .app h1 {
-    font-family: 'Londrina Solid';
-    color: #d9dce4;
-    font-size: var(--fs-app);
-    text-align: center;
+  font-family: "Londrina Solid";
+  color: #d9dce4;
+  font-size: var(--fs-app);
+  text-align: center;
 }
-
-.app-text-2 {
-    /* text-indent: 2em; */
-}
-
 .btns {
-    margin-top: 2em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2em;
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2em;
 }
-
-
-.btn-google img{
-    max-width: 10em;
-    display: none;
+.btn-google img {
+  max-width: 10em;
+  display: none;
 }
-
 .btn-app img {
-    max-width: 9em;
-    display: none;
+  max-width: 9em;
+  display: none;
 }
-
-
-@media (max-width: 944px){
-    .app{
-        display: flex;
-        min-height: 10em;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .cel{
-        display: none;
-    }
-
-    .second-col{
-        margin-top:9em;
-        padding-bottom: 3em;
-    }
-
-    .app h1 {
-       
-    }
-
-}
-
-@media (max-width: 410px){
-    .second-col {
-        margin-top: 7em;
-    }
-    .app h1 {
-        padding-left: 5%;
-        padding-right: 5%;
-        font-size: 1.5rem;
-        text-align: center;
-    }
-}
-
-
-
-
-
-/* Cards App */
-
-.container{
-    background-color: #2C5AB1;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+@media (max-width: 944px) {
+  .app {
     display: flex;
-    flex-wrap: wrap;
-    /* min-height: 25em; */
-    padding-bottom: 5%;
-    gap: 1em;
-    justify-content: center;
+    min-height: 10em;
     align-items: center;
-    padding-left: 5em;
-    padding-right: 5em;
-}
+    justify-content: center;
+  }
 
+  .cel {
+    display: none;
+  }
+
+  .second-col {
+    margin-top: 9em;
+    padding-bottom: 3em;
+  }
+}
+@media (max-width: 410px) {
+  .second-col {
+    margin-top: 7em;
+  }
+  .app h1 {
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
+/* CARDS APP */
+
+.container {
+  background-color: #2c5ab1;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 5%;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+  padding-left: 5em;
+  padding-right: 5em;
+}
 .card-app {
-    border-radius: 4px;
-    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
-    justify-content: center;
-    align-items: center;
-    
-    width: 17em;
-    height: 6.5em;
-    /* display: flex; */
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
 
-    /* background-color: rgba(233, 120, 32, 1); */
-    background-color: #d9dce4;
-    /* background-color: #4172cd; */
-    
+  width: 17em;
+  height: 6.5em;
+  background-color: #d9dce4;
 }
-
 .card-app h2 {
-    /* color:#F0F2F8; */
-    padding-top: 2%;
-    /* margin-left: 2%; */
-    font-family:'Londrina Solid';
-    text-align: center;
-    /* color: #FFFFFF; */
-    color: rgba(233, 120, 32, 1);
-    color:#2C5AB1;
-    /* text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50); */
+  padding-top: 2%;
+  font-family: "Londrina Solid";
+  text-align: center;
+  color: rgba(233, 120, 32, 1);
+  color: #2c5ab1;
 }
-
-.card-app p{
-    padding: 2%;
-    text-align: center;
-    /* color: #FFFFFF; */
-    color: #2C5AB1;
-    font-weight: 400;
-    
+.card-app p {
+  padding: 2%;
+  text-align: center;
+  color: #2c5ab1;
+  font-weight: 400;
 }
-
-@media (max-width: 1006px){
-    .container{
-        padding-bottom: 5%;
-        padding-left: 2em;
-        padding-right: 2em;
-    }
-
+@media (max-width: 1006px) {
+  .container {
+    padding-bottom: 5%;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
 }
+@media (max-width: 450px) {
+  .container {
+    padding-bottom: 5%;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
 
-@media (max-width: 450px){
-    .container{
-        padding-bottom: 5%;
-        padding-left: 2em;
-        padding-right: 2em;
-    }
+  .card-app h2 {
+    font-size: 1.4rem;
+  }
 
-    .card-app h2 {
-        font-size: 1.4rem;
-    }
+  .card-app p {
+    font-size: 0.9rem;
+  }
 
-    .card-app p {
-        font-size: 0.9rem;
-    }
-
-    .card-app {
-        width: 17em;
-        height: 5em; 
-    }
-
+  .card-app {
+    width: 17em;
+    height: 5em;
+  }
 }
-
-
-
-
 /* CONTACT INFO */
 
 .contact {
-    display:flex;
-    flex-wrap: wrap;
-    gap: 2em;
-    /* margin: 2em 3em 3em; */
-    padding-top: 5em;
-    padding-bottom: 8em;
-    align-items: flex-start;
-    justify-content: center;
-
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  padding-top: 5em;
+  padding-bottom: 8em;
+  align-items: flex-start;
+  justify-content: center;
 }
-
-.map img{
-    max-width: 100%;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.30);
+.map img {
+  max-width: 100%;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
 }
-
-.info span{
-    color: #545454;
-    font-size: var(--fs-title);
+.info span {
+  color: #545454;
+  font-size: var(--fs-title);
 }
-
-.info div{
-    padding-bottom: 5%;
+.info div {
+  padding-bottom: 5%;
 }
-
-.info img{
-    vertical-align: middle;
+.info img {
+  vertical-align: middle;
 }
-
 .social {
-    display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social * {
+  margin: 0.8em;
+  align-items: center;
+  max-width: 100%;
+}
+.social img {
+  max-width: 4em;
+}
+.social a {
+  text-decoration: none;
+}
+
+@media (max-width: 430px) {
+  .contact {
+    padding: 2em;
+  }
+
+  .social {
     align-items: center;
     justify-content: center;
+  }
 
+  .social * {
+    margin: 0.4em;
+  }
+
+  .social img {
+    max-width: 3em;
+  }
 }
-
-.social * {
-    margin: 0.8em;
-    align-items: center;
-    max-width: 100%
-}
-
-.social img{
-    max-width: 4em;
-}
-
-.social a {
-    text-decoration: none;
-}
-
-@media (max-width: 430px){
-    
-    .contact {
-        padding: 2em;
-    }
-
-    .social {
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .social * {
-        margin: 0.4em;  
-    }
-
-    .social img{
-        max-width: 3em;
-    }
-}
-
-
-
-
 /* FOOTER */
 
 .footer {
-    background-color: #2C5AB1;
-    padding: 2.5%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  background-color: #2c5ab1;
+  padding: 2.5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-
 .footer h5 {
-    color:#FFFFFF;
-    font-family: 'Alegreya Sans';
+  color: #ffffff;
+  font-family: "Alegreya Sans";
 }
-
-@media ( max-width: 470px ){
-    .footer {
-        /* padding-right: 2em;
-        padding-left: 2em;
-        padding-bottom: 2em; */
-        padding: 1.5em;
-    }
-
-    .footer img{
-        width: 5em;
-        height: auto;
-    }
-
-    .footer h5{
-        font-size: 0.2em;
-    }
+@media (max-width: 470px) {
+  .footer {
+    padding: 1.5em;
+  }
+  .footer img {
+    width: 5em;
+    height: auto;
+  }
+  .footer h5 {
+    font-size: 0.2em;
+  }
 }
